@@ -46,7 +46,7 @@ jobs:
           now_line \
           lnl_icon \
           2002 \
-          customtypeone_looppatches \
+          algorithm_experiments \
           testflight_expiration_warning
 
           # the final customization listed above CANNOT have a continuation character "\"
