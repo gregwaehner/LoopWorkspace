@@ -54,7 +54,7 @@ jobs:
           
           # Submodule Loop patches:
           # Loop: Filename: customization details
-          curl https://github.com/gregwaehner/Loop/commit/ea5a6dfd6f7cb3880835942115d06fe711054b19.patch | git apply -v --directory=Module
+          curl https://github.com/gregwaehner/Loop/commit/ea5a6dfd6f7cb3880835942115d06fe711054b19.patch | git apply -v --directory=Loop
           
       # Patch Fastlane Match to not print tables
       - name: Patch Match Tables
