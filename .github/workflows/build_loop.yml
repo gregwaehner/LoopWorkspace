@@ -52,6 +52,9 @@ jobs:
           # the final customization listed above CANNOT have a continuation character "\"
           # more customizations can be pasted after this line
           
+          # Loop customize Partial Bolus
+          curl https://github.com/gregwaehner/Loop/commit/ea5a6dfd6f7cb3880835942115d06fe711054b19.patch | git apply -v --directory=Module
+          
       # Patch Fastlane Match to not print tables
       - name: Patch Match Tables
         run: find /usr/local/lib/ruby/gems -name table_printer.rb | xargs sed -i "" "/puts(Terminal::Table.new(params))/d"
