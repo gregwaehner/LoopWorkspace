@@ -36,6 +36,9 @@ jobs:
           # Loop: Filename: customization details
           # curl https://github.com/gregwaehner/Loop/commit/490613a7f656ec123e0c5a99d8b31dfe28f393a1.patch | git apply -v --directory=Loop
 
+          # OmniBLE: 0.3u extra on insertion
+          curl https://github.com/gregwaehner/OmniBLE/commit/188ef22215bded692f2929dee865cc722834a651.patch | git apply -v --directory=OmniBLE
+          
           # The lines below add the customizations listed using the CustomizationSelect script
           # The "\" is a continuation character 
           #   the line following a "\" cannot be blank - that causes the Action to never complete
