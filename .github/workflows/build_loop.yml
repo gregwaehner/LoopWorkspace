@@ -33,11 +33,11 @@ jobs:
       - name: Customize Loop
         run: | 
 
-          # Loop: Filename: customization details
-          # curl https://github.com/gregwaehner/Loop/commit/490613a7f656ec123e0c5a99d8b31dfe28f393a1.patch | git apply -v --directory=Loop
-
           # OmniBLE: 0.3u extra on insertion
           curl https://github.com/gregwaehner/OmniBLE/commit/188ef22215bded692f2929dee865cc722834a651.patch | git apply -v --directory=OmniBLE
+
+          # Customization: LoopKit Insulin Model Customization
+          curl https://github.com/gregwaehner/LoopKit/commit/dfdcc5af90093ee8a553feeccd9da795319b7a51.patch | git apply -v --directory=LoopKit
           
           # The lines below add the customizations listed using the CustomizationSelect script
           # The "\" is a continuation character 
