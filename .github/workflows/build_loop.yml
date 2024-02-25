@@ -34,7 +34,7 @@ jobs:
         run: | 
 
           # Loop: Filename: customization details
-          curl https://github.com/gregwaehner/Loop/commit/490613a7f656ec123e0c5a99d8b31dfe28f393a1.patch | git apply -v --directory=Loop
+          # curl https://github.com/gregwaehner/Loop/commit/490613a7f656ec123e0c5a99d8b31dfe28f393a1.patch | git apply -v --directory=Loop
 
           # The lines below add the customizations listed using the CustomizationSelect script
           # The "\" is a continuation character 
