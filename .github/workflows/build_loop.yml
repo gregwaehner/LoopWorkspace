@@ -277,6 +277,9 @@ jobs:
           # Several patches may be added per submodule.
           # Adding comments (#) may be useful to easily tell the individual patches apart.
 
+          # Customization to Module LoopKit for Insulin Action
+          curl https://github.com/gregwaehner/LoopKit/commit/682e562e16e5f41d05201e1ab3d89eb7d853b8ae.patch | git apply -v --directory=LoopKit
+
           # The lines below add the customizations listed using the CustomizationSelect script
           # The "\" is a continuation character 
           #   the line following a "\" should not be blank
